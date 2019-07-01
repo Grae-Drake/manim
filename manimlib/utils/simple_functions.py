@@ -10,7 +10,7 @@ def sigmoid(x):
     
     Parameters
     ----------
-    x : int
+    x : Union[int, float]
         The real number to be mapped onto the -1 to 1 interval.
 
     Examples
@@ -52,7 +52,7 @@ def choose(n, r, use_cache=True):
         The size of the set you're choosing combinations from.
     r : int
         The size of the subset you're choosing.
-    use_cach : bool
+    use_cache : bool
         Whether to look up results from and store results to a cache. Defaults to True.
     
     Examples
@@ -134,9 +134,9 @@ def fdiv(a, b, zero_over_zero_value=None):
 
     Parameters
     ----------
-    a : int
+    a : Union[int, float]
         Numerator.
-    b : int
+    b : Union[int, float]
         Denominator.
     zero_over_zero_value : 
         Todo: document this parameter and behavior.
